@@ -1,6 +1,7 @@
 export enum UserFlags {
   NONE = 0,
   IS_ACTIVATED = 1 << 0,
+  IS_PREMIUM = 1 << 1
 }
 
 export enum Permissions {
