@@ -9,5 +9,5 @@ export enum Permissions {
   MANAGE_CLAN = 1 << 0,
   MANAGE_MAPS = 1 << 1,
 
-  ADMINISTRATOR = 1 << 16
+  ADMINISTRATOR = ~0
 }
