@@ -11,3 +11,5 @@ export enum Permissions {
 
   ADMINISTRATOR = ~0
 }
+
+export const CUSTOM_TITLE_MAX_CHARS = 16;
