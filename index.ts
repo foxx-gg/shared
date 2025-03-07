@@ -20,63 +20,57 @@ export const arenas = [
   {
     dbLabel: 'dm',
     name: 'deathmatch',
+    image: 'dm.webp',
     children: [
       {
         id: 'dm',
         name: 'regular',
-        image: 'dm.webp'
       },
       {
         id: 'hdm',
         name: 'hard',
-        image: 'dm.webp'
       },
       {
         id: 'os',
         name: 'oldschool',
-        image: 'dm.webp',
       },
       {
         id: 'xdm',
         name: 'xdm',
-        image: 'dm.webp',
       }
     ]
   },
   {
     dbLabel: 'dd',
     name: 'derby',
+    image: 'dd.webp',
     children: [
       {
         id: 'dd',
         name: 'regular',
-        image: 'dd.webp'
       },
       {
         id: 'pdd',
         name: 'power',
-        image: 'dd.webp'
       },
     ]
   },
   {
     dbLabel: 'race',
     name: 'race',
+    image: 'race.webp',
     children: [
       {
         id: 'race1',
         name: 'alpha',
-        image: 'race.webp'
       },
       {
         id: 'race2',
         name: 'classic',
-        image: 'race.webp'
       },
       {
         id: 'race3',
         name: 'vanilla',
-        image: 'race.webp'
       },
     ]
   },
@@ -93,16 +87,15 @@ export const arenas = [
   },
   {
     name: 'playground',
+    image: 'gr.webp',
     children: [
       {
         id: 'gr',
         name: 'garage',
-        image: 'gr.webp'
       },
       {
         id: 'fr',
         name: 'freeroam',
-        image: 'gr.webp'
       },
     ]
   },
@@ -114,26 +107,23 @@ export const arenas = [
   {
     dbLabel: 'sh',
     name: 'shooter',
+    image: 'sh.webp',
     children: [
       {
         id: 'sh1',
         name: 'regular',
-        image: 'sh.webp'
       },
       {
         id: 'sh2',
         name: 'jump',
-        image: 'sh.webp'
       },
       {
         id: 'ctf1',
         name: 'ctf',
-        image: 'sh.webp'
       },
       {
         id: 'ctf2',
         name: 'power ctf',
-        image: 'sh.webp'
       },
     ]
   },
