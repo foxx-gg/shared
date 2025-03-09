@@ -7,9 +7,10 @@ export enum UserFlags {
 export enum Permissions {
   NONE = 0,
 
-  MANAGE_CLANS = 1 << 10,
-  MANAGE_MAPS = 1 << 11,
-  MANAGE_USERS = 1 << 12,
+  ACCESS_ACP = 1 << 10,
+  MANAGE_CLANS = 1 << 11,
+  MANAGE_MAPS = 1 << 12,
+  MANAGE_USERS = 1 << 13,
 
   ADMINISTRATOR = ~0
 }
