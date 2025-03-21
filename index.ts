@@ -19,123 +19,150 @@ export const CUSTOM_TITLE_MAX_CHARS = 16;
 
 export const arenas = [
   {
-    dbLabel: 'dm',
-    name: 'deathmatch',
-    image: 'dm.webp',
+    dbPrefix: 'dm',
+    type: 'label',
+    label: 'deathmatch',
+    image: 'dm',
     children: [
       {
+        type: 'item',
         id: 'dm',
-        name: 'regular',
+        label: 'regular',
       },
       {
+        type: 'item',
         id: 'hdm',
-        name: 'hard',
+        label: 'hard',
       },
       {
+        type: 'item',
         id: 'os',
-        name: 'oldschool',
+        label: 'oldschool',
       },
       {
+        type: 'item',
         id: 'xdm',
-        name: 'xdm',
+        label: 'mixed',
       }
     ]
   },
   {
-    dbLabel: 'dd',
-    name: 'derby',
-    image: 'dd.webp',
+    dbPrefix: 'dd',
+    type: 'label',
+    label: 'derby',
+    image: 'dd',
     children: [
       {
+        type: 'item',
         id: 'dd',
-        name: 'regular',
+        label: 'regular',
       },
       {
+        type: 'item',
         id: 'pdd',
-        name: 'power',
+        label: 'power',
       },
     ]
   },
   {
-    dbLabel: 'race',
-    name: 'race',
-    image: 'race.webp',
+    dbPrefix: 'race',
+    type: 'label',
+    label: 'race',
+    image: 'race',
     children: [
       {
+        type: 'item',
         id: 'race1',
-        name: 'alpha',
+        label: 'alpha',
       },
       {
+        type: 'item',
         id: 'race2',
-        name: 'classic',
+        label: 'classic',
       },
       {
+        type: 'item',
         id: 'race3',
-        name: 'vanilla',
+        label: 'vanilla',
       },
     ]
   },
   {
+    type: 'item',
     id: 'cw',
-    name: 'clanwars',
-    image: 'cw.webp'
+    label: 'clanwars',
+    image: 'cw',
+    noMaps: true
   },
   {
-    dbLabel: 'hu',
+    type: 'item',
+    dbPrefix: 'hu',
     id: 'hu',
-    name: 'hunter',
-    image: 'hu.webp'
+    label: 'hunter',
+    image: 'hu',
   },
   {
-    name: 'playground',
-    image: 'gr.webp',
+    type: 'label',
+    label: 'playground',
+    image: 'gr',
+    noMaps: true,
     children: [
       {
+        type: 'item',
         id: 'gr',
-        name: 'garage',
+        label: 'garage',
       },
       {
+        type: 'item',
         id: 'fr',
-        name: 'freeroam',
+        label: 'freeroam',
       },
     ]
   },
   {
+    type: 'item',
     id: 'tr',
-    name: 'training',
-    image: 'tr.webp'
+    label: 'training',
+    image: 'tr'
   },
   {
-    dbLabel: 'sh',
-    name: 'shooter',
-    image: 'sh.webp',
+    type: 'label',
+    dbPrefix: 'sh',
+    label: 'shooter',
+    image: 'sh',
     children: [
       {
+        type: 'item',
         id: 'sh1',
-        name: 'regular',
+        label: 'regular',
       },
       {
+        type: 'item',
         id: 'sh2',
-        name: 'jump',
+        label: 'jump',
       },
       {
+        type: 'item',
         id: 'ctf1',
-        name: 'ctf',
+        label: 'ctf',
       },
       {
+        type: 'item',
         id: 'ctf2',
-        name: 'power ctf',
+        label: 'power ctf',
       },
     ]
   },
   {
+    type: 'item',
     id: 'turf',
-    name: 'turf war',
-    image: 'turf.webp'
+    label: 'turf war',
+    image: 'turf'
   },
   {
+    type: 'item',
     id: 'mg',
-    name: 'minigames',
-    image: 'mg.webp'
+    label: 'minigames',
+    image: 'mg'
   },
 ];
