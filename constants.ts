@@ -1,0 +1,1 @@
+export const CUSTOM_TITLE_MAX_CHARS = 16;
