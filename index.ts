@@ -170,8 +170,8 @@ export const arenas = [
 export const arenaExists = (id: string) => {
   return !arenas.some((arena) => {
     if (arena.type === 'label') {
-      return arena.children.some((_arena) => _arena.id === value);
+      return arena.children.some((_arena) => _arena.id === id);
     }
-    return arena.id === value;
+    return arena.id === id;
   });
 };
