@@ -166,3 +166,15 @@ export const arenaExists = (id: string) => {
     return arena.id === id;
   });
 };
+
+export const getArenaByID = (id: string) => {
+  for (const arena of arenas.values()) {
+    const index = arena.children?.findIndex(x => x.id === id);
+    if (arena?.id === id) {
+      return arena;
+    }
+    else if (arena.children && index !== -1) {
+      return { ...arena.children[index], image: arena.image, label: `${arena.label}: ${arena.children[index].label}` };
+    }
+  }
+}
