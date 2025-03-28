@@ -1,6 +1,6 @@
 export const CUSTOM_TITLE_MAX_CHARS = 16;
 
-export declare enum AuditLogEvent {
+export enum AuditLogEvent {
   USER_SIGN_UP = 1,
   USER_SIGN_IN,
   USER_PASSWORD_CHANGE,
