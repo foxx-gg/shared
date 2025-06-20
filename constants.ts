@@ -24,6 +24,6 @@ export enum AuditLogEvent {
 
   BLOG_POST_CREATE = 60,
 
-  GAME_USER_SIGN_IN = 80,
-  GAME_USER_SIGN_OUT
+  PLAYER_JOIN = 80,
+  PLAYER_LEAVE
 }
