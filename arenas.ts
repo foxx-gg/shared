@@ -15,172 +15,179 @@ type LeaderboardCategory = {
 
 type Leaderboard = {
   name: string;
+  icon?: string;
   categories: LeaderboardCategory[];
 }
 
 export const leaderboards: Leaderboard[] = [
   {
-    name: 'General',
+    name: 'general',
+    icon: 'chart-simple',
     categories: [
       {
-        name: 'Level',
+        name: 'level',
         fields: ['level', 'exp']
       },
       {
-        name: 'Money',
+        name: 'money',
         fields: ['money']
       },
       {
-        name: 'Playtime',
+        name: 'playtime',
         fields: ['playTime']
       },
       {
-        name: 'Maps Bought',
+        name: 'maps bought',
         fields: ['mapsBought']
       },
       {
-        name: 'Events Played',
+        name: 'events played',
         fields: ['eventsPlayed']
       },
       {
-        name: 'Events Won',
+        name: 'events won',
         fields: ['eventsWon']
       }
     ]
   },
   {
-    name: 'Deathmatch',
+    name: 'deathmatch',
+    icon: 'car',
     categories: [
       {
-        name: 'EXP',
+        name: 'exp',
         fields: ['dm.exp']
       },
       {
-        name: 'Playtime',
+        name: 'playtime',
         fields: ['dm.playTime']
       },
       {
-        name: 'Maps Won',
+        name: 'maps won',
         fields: ['dm.mapsWon']
       },
       {
-        name: 'Maps Played',
+        name: 'maps played',
         fields: ['dm.mapsPlayed']
       },
       {
-        name: 'Hunters Reached',
+        name: 'hunters reached',
         fields: ['dm.huntersReached']
       },
     ]
   },
   {
-    name: 'Derby',
+    name: 'derby',
+    icon: 'car-crash',
     categories: [
       {
-        name: 'EXP',
+        name: 'exp',
         fields: ['exp']
       },
       {
-        name: 'Playtime',
+        name: 'playtime',
         fields: ['dd.playTime']
       },
       {
-        name: 'Maps Won',
+        name: 'maps won',
         fields: ['dd.mapsWon']
       },
       {
-        name: 'Maps Played',
+        name: 'maps played',
         fields: ['dd.mapsPlayed']
       },
       {
-        name: 'Total Kills',
+        name: 'total kills',
         fields: ['dd.totalKills']
       },
       {
-        name: 'Total Damage',
+        name: 'total damage',
         fields: ['dd.totalDamage']
       },
     ]
   },
   {
-    name: 'Race',
+    name: 'race',
+    icon: 'cars',
     categories: [
       {
-        name: 'EXP',
+        name: 'exp',
         fields: ['race.exp']
       },
       {
-        name: 'Playtime',
+        name: 'playtime',
         fields: ['race.playTime']
       },
       {
-        name: 'Maps Won',
+        name: 'naps won',
         fields: ['race.mapsWon']
       },
       {
-        name: 'Maps Played',
+        name: 'naps played',
         fields: ['race.mapsPlayed']
       },
       {
-        name: 'Maps Finished',
+        name: 'maps finished',
         fields: ['race.mapsFinished']
       },
     ]
   },
   {
-    name: 'Shooter',
+    name: 'shooter',
+    icon: 'rocket',
     categories: [
       {
-        name: 'EXP',
+        name: 'exp',
         fields: ['shooter.exp']
       },
       {
-        name: 'playTime',
+        name: 'playtime',
         fields: ['shooter.playTime']
       },
       {
-        name: 'Maps Won',
+        name: 'maps won',
         fields: ['shooter.mapsWon']
       },
       {
-        name: 'Maps Played',
+        name: 'maps played',
         fields: ['shooter.mapsPlayed']
       },
       {
-        name: 'Total Kills',
+        name: 'total kills',
         fields: ['shooter.totalKills']
       },
       {
-        name: 'Damage Given',
+        name: 'damage given',
         fields: ['shooter.damageGiven']
       },
       {
-        name: 'Damage Taken',
+        name: 'damage taken',
         fields: ['shooter.damageTaken']
       },
     ]
   },
   {
-    name: 'Hunter',
+    name: 'hunter',
+    icon: 'helicopter',
     categories: [
       {
-        name: 'EXP',
+        name: 'exp',
         fields: ['hunter.exp']
       },
       {
-        name: 'Playtime',
+        name: 'playtime',
         fields: ['hunter.playTime']
       },
       {
-        name: 'Maps Won',
+        name: 'maps Won',
         fields: ['hunter.mapsWon']
       },
       {
-        name: 'Maps Played',
+        name: 'maps played',
         fields: ['hunter.mapsPlayed']
       },
       {
-        name: 'Total Kills',
+        name: 'total kills',
         fields: ['hunter.totalKills']
       },
     ]
