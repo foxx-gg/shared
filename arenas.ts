@@ -8,6 +8,185 @@ type Arena = {
   noMaps?: boolean;
 }
 
+type LeaderboardCategory = {
+  name: string;
+  fields: string[];
+}
+
+type Leaderboard = {
+  name: string;
+  categories: LeaderboardCategory[];
+}
+
+export const leaderboards: Leaderboard[] = [
+  {
+    name: 'General',
+    categories: [
+      {
+        name: 'Level',
+        fields: ['exp', 'level']
+      },
+      {
+        name: 'Money',
+        fields: ['money']
+      },
+      {
+        name: 'Playtime',
+        fields: ['playTime']
+      },
+      {
+        name: 'Maps Bought',
+        fields: ['mapsBought']
+      },
+      {
+        name: 'Events Played',
+        fields: ['eventsPlayed']
+      },
+      {
+        name: 'Events Won',
+        fields: ['eventsWon']
+      }
+    ]
+  },
+  {
+    name: 'Deathmatch',
+    categories: [
+      {
+        name: 'EXP',
+        fields: ['dm.exp']
+      },
+      {
+        name: 'Playtime',
+        fields: ['dm.playTime']
+      },
+      {
+        name: 'Maps Won',
+        fields: ['dm.mapsWon']
+      },
+      {
+        name: 'Maps Played',
+        fields: ['dm.mapsPlayed']
+      },
+      {
+        name: 'Hunters Reached',
+        fields: ['dm.huntersReached']
+      },
+    ]
+  },
+  {
+    name: 'Derby',
+    categories: [
+      {
+        name: 'EXP',
+        fields: ['exp']
+      },
+      {
+        name: 'Playtime',
+        fields: ['dd.playTime']
+      },
+      {
+        name: 'Maps Won',
+        fields: ['dd.mapsWon']
+      },
+      {
+        name: 'Maps Played',
+        fields: ['dd.mapsPlayed']
+      },
+      {
+        name: 'Total Kills',
+        fields: ['dd.totalKills']
+      },
+      {
+        name: 'Total Damage',
+        fields: ['dd.totalDamage']
+      },
+    ]
+  },
+  {
+    name: 'Race',
+    categories: [
+      {
+        name: 'EXP',
+        fields: ['race.exp']
+      },
+      {
+        name: 'Playtime',
+        fields: ['race.playTime']
+      },
+      {
+        name: 'Maps Won',
+        fields: ['race.mapsWon']
+      },
+      {
+        name: 'Maps Played',
+        fields: ['race.mapsPlayed']
+      },
+      {
+        name: 'Maps Finished',
+        fields: ['race.mapsFinished']
+      },
+    ]
+  },
+  {
+    name: 'Shooter',
+    categories: [
+      {
+        name: 'EXP',
+        fields: ['shooter.exp']
+      },
+      {
+        name: 'playTime',
+        fields: ['shooter.playTime']
+      },
+      {
+        name: 'Maps Won',
+        fields: ['shooter.mapsWon']
+      },
+      {
+        name: 'Maps Played',
+        fields: ['shooter.mapsPlayed']
+      },
+      {
+        name: 'Total Kills',
+        fields: ['shooter.totalKills']
+      },
+      {
+        name: 'Damage Given',
+        fields: ['shooter.damageGiven']
+      },
+      {
+        name: 'Damage Taken',
+        fields: ['shooter.damageTaken']
+      },
+    ]
+  },
+  {
+    name: 'Hunter',
+    categories: [
+      {
+        name: 'EXP',
+        fields: ['hunter.exp']
+      },
+      {
+        name: 'Playtime',
+        fields: ['hunter.playTime']
+      },
+      {
+        name: 'Maps Won',
+        fields: ['hunter.mapsWon']
+      },
+      {
+        name: 'Maps Played',
+        fields: ['hunter.mapsPlayed']
+      },
+      {
+        name: 'Total Kills',
+        fields: ['hunter.totalKills']
+      },
+    ]
+  }
+];
+
 export const arenas: Arena[] = [
   {
     dbPrefix: 'dm',
