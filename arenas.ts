@@ -213,6 +213,7 @@ export const arenas: Arena[] = [
         type: 'item',
         id: 'xdm',
         label: 'mixed',
+        noMaps: true
       }
     ]
   },
