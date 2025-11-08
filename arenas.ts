@@ -24,7 +24,7 @@ export const leaderboards: Leaderboard[] = [
     categories: [
       {
         name: 'Level',
-        fields: ['exp', 'level']
+        fields: ['level', 'exp']
       },
       {
         name: 'Money',
