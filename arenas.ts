@@ -119,11 +119,11 @@ export const leaderboards: Leaderboard[] = [
         fields: ['race.playTime']
       },
       {
-        name: 'naps won',
+        name: 'maps won',
         fields: ['race.mapsWon']
       },
       {
-        name: 'naps played',
+        name: 'maps played',
         fields: ['race.mapsPlayed']
       },
       {
