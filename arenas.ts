@@ -21,7 +21,7 @@ type Leaderboard = {
 
 export const leaderboards: Leaderboard[] = [
   {
-    name: 'general',
+    name: 'global',
     icon: 'chart-simple',
     categories: [
       {
